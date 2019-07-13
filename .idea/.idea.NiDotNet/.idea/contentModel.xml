@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/.Rider2019.1/system/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.Rider2019.1/system/resharper-host/local/Transient/ReSharperHost/v191/SolutionCaches/_NiDotNet.-1183081924.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="NiDotNet" t="IncludeRecursive">
+        <e p="NIF" t="Include">
+          <e p="BinaryReaderExtensions.cs" t="Include" />
+          <e p="Data" t="Include">
+            <e p="BlockInfo.cs" t="Include" />
+          </e>
+          <e p="Enums" t="Include">
+            <e p="AlphaFormat.cs" t="Include" />
+            <e p="ConsistencyType.cs" t="Include" />
+            <e p="Endian.cs" t="Include" />
+            <e p="KeyType.cs" t="Include" />
+            <e p="MaterialColor.cs" t="Include" />
+            <e p="MipMapFormat.cs" t="Include" />
+            <e p="NiSwitchFlags.cs" t="Include" />
+            <e p="NiVersion.cs" t="Include" />
+            <e p="PixelLayout.cs" t="Include" />
+            <e p="PlatformID.cs" t="Include" />
+            <e p="RendererID.cs" t="Include" />
+            <e p="TransformMethod.cs" t="Include" />
+            <e p="VectorFlags.cs" t="Include" />
+          </e>
+          <e p="NiFile.cs" t="Include" />
+          <e p="NiHeader.cs" t="Include" />
+          <e p="Nodes" t="Include">
+            <e p="AbstractAdditionalGeometryData.cs" t="Include" />
+            <e p="NiAVObject.cs" t="Include" />
+            <e p="NiAlphaProperty.cs" t="Include" />
+            <e p="NiAmbientLight.cs" t="Include" />
+            <e p="NiBoneData.cs" t="Include" />
+            <e p="NiBoneVertData.cs" t="Include" />
+            <e p="NiBoolean.cs" t="Include" />
+            <e p="NiBound.cs" t="Include" />
+            <e p="NiByteColor4.cs" t="Include" />
+            <e p="NiCamera.cs" t="Include" />
+            <e p="NiDynamicEffect.cs" t="Include" />
+            <e p="NiExtraData.cs" t="Include" />
+            <e p="NiFloat.cs" t="Include" />
+            <e p="NiFormatPrefs.cs" t="Include" />
+            <e p="NiGeometry.cs" t="Include" />
+            <e p="NiGeometryData.cs" t="Include" />
+            <e p="NiImage.cs" t="Include" />
+            <e p="NiInterpController.cs" t="Include" />
+            <e p="NiInterpolator.cs" t="Include" />
+            <e p="NiKey.cs" t="Include" />
+            <e p="NiKeyBasedInterpolator.cs" t="Include" />
+            <e p="NiKeyGroup.cs" t="Include" />
+            <e p="NiKeyframeController.cs" t="Include" />
+            <e p="NiKeyframeData.cs" t="Include" />
+            <e p="NiLODData.cs" t="Include" />
+            <e p="NiLODNode.cs" t="Include" />
+            <e p="NiLODRange.cs" t="Include" />
+            <e p="NiLight.cs" t="Include" />
+            <e p="NiMatchGroup.cs" t="Include" />
+            <e p="NiMaterialColorController.cs" t="Include" />
+            <e p="NiMaterialData.cs" t="Include" />
+            <e p="NiMaterialProperty.cs" t="Include" />
+            <e p="NiMatrix2x2.cs" t="Include" />
+            <e p="NiMatrix3X3.cs" t="Include" />
+            <e p="NiMipMap.cs" t="Include" />
+            <e p="NiNode.cs" t="Include" />
+            <e p="NiObject.cs" t="Include" />
+            <e p="NiObjectNet.cs" t="Include" />
+            <e p="NiPalette.cs" t="Include" />
+            <e p="NiPersistentSrcTextureRendererData.cs" t="Include" />
+            <e p="NiPixelData.cs" t="Include" />
+            <e p="NiPixelFormat.cs" t="Include" />
+            <e p="NiPoint3InterpController.cs" t="Include" />
+            <e p="NiPoint3Interpolator.cs" t="Include" />
+            <e p="NiPosData.cs" t="Include" />
+            <e p="NiProperty.cs" t="Include" />
+            <e p="NiPtr.cs" t="Include" />
+            <e p="NiQuatTransform.cs" t="Include" />
+            <e p="NiQuaternion.cs" t="Include" />
+            <e p="NiRangeLODData.cs" t="Include" />
+            <e p="NiRawImageData.cs" t="Include" />
+            <e p="NiRef.cs" t="Include" />
+            <e p="NiShadeProperty.cs" t="Include" />
+            <e p="NiShaderTexDesc.cs" t="Include" />
+            <e p="NiSingleInterpController.cs" t="Include" />
+            <e p="NiSkinData.cs" t="Include" />
+            <e p="NiSkinInstance.cs" t="Include" />
+            <e p="NiSkinPartition.cs" t="Include" />
+            <e p="NiSourceTexture.cs" t="Include" />
+            <e p="NiSpecularProperty.cs" t="Include" />
+            <e p="NiString.cs" t="Include" />
+            <e p="NiStringExtraData.cs" t="Include" />
+            <e p="NiSwitchNode.cs" t="Include" />
+            <e p="NiTBC.cs" t="Include" />
+            <e p="NiTexCoord.cs" t="Include" />
+            <e p="NiTexDesc.cs" t="Include" />
+            <e p="NiTexture.cs" t="Include" />
+            <e p="NiTextureProperty.cs" t="Include" />
+            <e p="NiTexturingProperty.cs" t="Include" />
+            <e p="NiTimeController.cs" t="Include" />
+            <e p="NiTransform.cs" t="Include" />
+            <e p="NiTransformController.cs" t="Include" />
+            <e p="NiTransformData.cs" t="Include" />
+            <e p="NiTransformInterpolator.cs" t="Include" />
+            <e p="NiTriBasedGeom.cs" t="Include" />
+            <e p="NiTriBasedGeomData.cs" t="Include" />
+            <e p="NiTriShape.cs" t="Include" />
+            <e p="NiTriShapeData.cs" t="Include" />
+            <e p="NiTriStrips.cs" t="Include" />
+            <e p="NiTriStripsData.cs" t="Include" />
+            <e p="NiTriangle.cs" t="Include" />
+            <e p="NiVector3.cs" t="Include" />
+            <e p="NiVertexColorProperty.cs" t="Include" />
+            <e p="NiZBufferProperty.cs" t="Include" />
+            <e p="QuatKey.cs" t="Include" />
+            <e p="SkinPartition.cs" t="Include" />
+          </e>
+        </e>
+        <e p="NiDotNet.csproj" t="IncludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+      </e>
+      <e p="NiDotNet.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

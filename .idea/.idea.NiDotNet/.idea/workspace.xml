@@ -1,0 +1,1076 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="77e16011-6820-426c-92d2-fbee59f81950" name="Default Changelist" comment="Fixed up files to with new namespaces and extra comments.">
+      <change afterPath="$PROJECT_DIR$/NiDotNet.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/BinaryReaderExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Data/BlockInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Enums/AlphaFormat.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Enums/ConsistencyType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Enums/Endian.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Enums/KeyType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Enums/MaterialColor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Enums/MipMapFormat.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Enums/NiSwitchFlags.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Enums/NiVersion.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Enums/PixelLayout.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Enums/PlatformID.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Enums/RendererID.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Enums/TransformMethod.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Enums/VectorFlags.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/NiFile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/NiHeader.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/AbstractAdditionalGeometryData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiAVObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiAlphaProperty.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiAmbientLight.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiBoneData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiBoneVertData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiBoolean.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiBound.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiByteColor4.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiCamera.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiDynamicEffect.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiExtraData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiFloat.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiFormatPrefs.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiGeometry.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiGeometryData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiImage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiInterpController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiInterpolator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiKey.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiKeyBasedInterpolator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiKeyGroup.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiKeyframeController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiKeyframeData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiLODData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiLODNode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiLODRange.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiLight.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiMatchGroup.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiMaterialColorController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiMaterialData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiMaterialProperty.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiMatrix2x2.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiMatrix3X3.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiMipMap.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiNode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiObjectNet.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiPalette.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiPersistentSrcTextureRendererData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiPixelData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiPixelFormat.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiPoint3InterpController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiPoint3Interpolator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiPosData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiProperty.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiPtr.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiQuatTransform.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiQuaternion.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiRangeLODData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiRawImageData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiRef.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiShadeProperty.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiShaderTexDesc.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiSingleInterpController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiSkinData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiSkinInstance.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiSkinPartition.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiSourceTexture.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiSpecularProperty.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiString.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiStringExtraData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiSwitchNode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTBC.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTexCoord.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTexDesc.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTexture.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTextureProperty.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTexturingProperty.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTimeController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTransform.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTransformController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTransformData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTransformInterpolator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTriBasedGeom.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTriBasedGeomData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTriShape.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTriShapeData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTriStrips.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTriStripsData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTriangle.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiVector3.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiVertexColorProperty.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiZBufferProperty.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/QuatKey.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NIF/Nodes/SkinPartition.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/NiDotNet.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NiDotNet/Properties/AssemblyInfo.cs" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTexture.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+              <folding>
+                <marker date="1562976761012" expanded="true" signature="46:203" ph="{...}" />
+                <marker date="1562976761012" expanded="true" signature="89:201" ph="{...}" />
+                <marker date="1562976761012" expanded="true" signature="175:195" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiLight.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+              <folding>
+                <marker date="1562976761096" expanded="false" signature="6:35" ph="..." />
+                <marker date="1562976761096" expanded="true" signature="65:635" ph="{...}" />
+                <marker date="1562976761096" expanded="true" signature="110:633" ph="{...}" />
+                <marker date="1562976761096" expanded="true" signature="417:627" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiFloat.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+              <folding>
+                <marker date="1562976761028" expanded="true" signature="46:361" ph="{...}" />
+                <marker date="1562976761028" expanded="true" signature="84:359" ph="{...}" />
+                <marker date="1562976761028" expanded="true" signature="222:283" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiInterpolator.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+              <folding>
+                <marker date="1562976761088" expanded="true" signature="46:214" ph="{...}" />
+                <marker date="1562976761088" expanded="true" signature="91:212" ph="{...}" />
+                <marker date="1562976761088" expanded="true" signature="186:206" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTexCoord.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+              <folding>
+                <marker date="1562976761020" expanded="false" signature="6:35" ph="..." />
+                <marker date="1562976761020" expanded="true" signature="65:480" ph="{...}" />
+                <marker date="1562976761020" expanded="true" signature="106:478" ph="{...}" />
+                <marker date="1562976761020" expanded="true" signature="289:383" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTexDesc.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="23" column="71" lean-forward="true" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
+              <folding>
+                <marker date="1562976761140" expanded="false" signature="6:42" ph="..." />
+                <marker date="1562976761140" expanded="true" signature="72:1257" ph="{...}" />
+                <marker date="1562976761140" expanded="true" signature="112:1255" ph="{...}" />
+                <marker date="1562976761140" expanded="true" signature="674:1249" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/NiFile.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="445">
+              <caret line="83" column="22" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="22" />
+              <folding>
+                <marker date="1562977379976" expanded="false" signature="6:178" ph="..." />
+                <marker date="1562977379976" expanded="true" signature="202:3821" ph="{...}" />
+                <marker date="1562977379976" expanded="true" signature="209:279" ph="/// A .NIF block structured file. ... " />
+                <marker date="1562977379976" expanded="true" signature="317:3819" ph="{...}" />
+                <marker date="1562977379976" expanded="true" signature="332:408" ph="/// The data for this nif file. ... " />
+                <marker date="1562977379976" expanded="true" signature="464:533" ph="/// The nif header file. ... " />
+                <marker date="1562977379976" expanded="true" signature="592:669" ph="/// All blocks in this nif file. ... " />
+                <marker date="1562977379976" expanded="true" signature="757:839" ph="/// All block types in this Assembly. ... " />
+                <marker date="1562977379976" expanded="true" signature="974:994" ph="{...}" />
+                <marker date="1562977379976" expanded="true" signature="1038:1677" ph="{...}" />
+                <marker date="1562977379976" expanded="true" signature="1061:1136" ph="/* Collect all NiObjects in this Assembly. ... */" />
+                <marker date="1562977379976" expanded="true" signature="1380:1428" ph="/* Read Header. ... */" />
+                <marker date="1562977379976" expanded="true" signature="1491:1565" ph="/* Read all the blocks in this .nif file. ... */" />
+                <marker date="1562977379976" expanded="true" signature="1715:3040" ph="{...}" />
+                <marker date="1562977379976" expanded="true" signature="1782:3030" ph="{...}" />
+                <marker date="1562977379976" expanded="true" signature="1886:2074" ph="/* Find type for this block. ... */" />
+                <marker date="1562977379976" expanded="true" signature="2189:2339" ph="{...}" />
+                <marker date="1562977379976" expanded="true" signature="2357:2526" ph="/* Read block info binary reader to be handled async. ... */" />
+                <marker date="1562977379976" expanded="true" signature="2654:2749" ph="/* Create instance of this NiObject and start reading. ... */" />
+                <marker date="1562977379976" expanded="true" signature="2860:2978" ph="/* Keep track of block as it may be referenced or pointed to by other blocks. ... */" />
+                <marker date="1562977379976" expanded="true" signature="3050:3245" ph="/// Get Objects from Int Array. ... " />
+                <marker date="1562977379976" expanded="true" signature="3309:3527" ph="{...}" />
+                <marker date="1562977379976" expanded="true" signature="3422:3492" ph="{...}" />
+                <marker date="1562977379976" expanded="true" signature="3545:3682" ph="/// Access the blocks directly though this NiFile. ... " />
+                <marker date="1562977379976" expanded="true" signature="3763:3813" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiPixelData.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+              <folding>
+                <marker date="1562976761092" expanded="false" signature="6:49" ph="..." />
+                <marker date="1562976761092" expanded="true" signature="79:953" ph="{...}" />
+                <marker date="1562976761092" expanded="true" signature="126:951" ph="{...}" />
+                <marker date="1562976761092" expanded="true" signature="382:945" ph="{...}" />
+                <marker date="1562976761092" expanded="true" signature="761:935" ph="{...}" />
+                <marker date="1562976761092" expanded="true" signature="828:921" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTriShapeData.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+              <folding>
+                <marker date="1562976761072" expanded="true" signature="46:1414" ph="{...}" />
+                <marker date="1562976761072" expanded="true" signature="53:80" ph="/* TODO: Fix ... */" />
+                <marker date="1562976761072" expanded="true" signature="133:1412" ph="{...}" />
+                <marker date="1562976761072" expanded="true" signature="538:1406" ph="{...}" />
+                <marker date="1562976761072" expanded="true" signature="724:974" ph="{...}" />
+                <marker date="1562976761072" expanded="true" signature="857:960" ph="{...}" />
+                <marker date="1562976761072" expanded="true" signature="1155:1396" ph="{...}" />
+                <marker date="1562976761072" expanded="true" signature="1189:1296" ph="{...}" />
+                <marker date="1562976761072" expanded="true" signature="1318:1382" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/SkinPartition.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-259">
+              <caret line="58" column="48" lean-forward="true" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
+              <folding>
+                <marker date="1562976761028" expanded="true" signature="46:3795" ph="{...}" />
+                <marker date="1562976761028" expanded="true" signature="53:120" ph="/* This Object runs out of data sometimes. TODO: Fix ... */" />
+                <marker date="1562976761028" expanded="true" signature="162:3793" ph="{...}" />
+                <marker date="1562976761028" expanded="true" signature="1309:3787" ph="{...}" />
+                <marker date="1562976761028" expanded="true" signature="1673:1749" ph="{...}" />
+                <marker date="1562976761028" expanded="true" signature="1843:2075" ph="{...}" />
+                <marker date="1562976761028" expanded="true" signature="1969:2061" ph="{...}" />
+                <marker date="1562976761028" expanded="true" signature="2165:2536" ph="{...}" />
+                <marker date="1562976761028" expanded="true" signature="2312:2522" ph="{...}" />
+                <marker date="1562976761028" expanded="true" signature="2393:2504" ph="{...}" />
+                <marker date="1562976761028" expanded="true" signature="2640:2724" ph="{...}" />
+                <marker date="1562976761028" expanded="true" signature="2830:3446" ph="{...}" />
+                <marker date="1562976761028" expanded="true" signature="2987:3194" ph="{...}" />
+                <marker date="1562976761028" expanded="true" signature="3072:3176" ph="{...}" />
+                <marker date="1562976761028" expanded="true" signature="3329:3432" ph="{...}" />
+                <marker date="1562976761028" expanded="true" signature="3682:3777" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiAVObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTexture.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTexDesc.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiPosData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTriShapeData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiSkinInstance.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiLight.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiFloat.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTBC.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiRef.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiPtr.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiInterpolator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/SkinPartition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/BinaryReaderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Enums/TransformMethod.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/NiHeader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Enums/ConsistencyType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Enums/NiSwitchFlags.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/NiFile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Enums/MaterialColor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Enums/MipMapFormat.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Enums/VectorFlags.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Enums/PixelLayout.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Enums/AlphaFormat.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Enums/RendererID.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiPixelData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Enums/PlatformID.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiObjectNet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Enums/NiVersion.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Enums/KeyType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiMatrix3X3.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Enums/Endian.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Data/BlockInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTexCoord.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/NiDotNet/NIF/Data/BlockInfo.cs" />
+        <option value="$PROJECT_DIR$/NiDotNet/NIF/NiFile.cs" />
+        <option value="$PROJECT_DIR$/NiDotNet/NIF/BinaryReaderExtensions.cs" />
+        <option value="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiRef.cs" />
+        <option value="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiPtr.cs" />
+        <option value="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiObject.cs" />
+        <option value="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiNode.cs" />
+        <option value="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiAVObject.cs" />
+        <option value="$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiObjectNet.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/.idea.NiDotNet/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/.idea.NiDotNet/.idea/indexLayout.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="67" />
+    <option name="y" value="25" />
+    <option name="width" value="1887" />
+    <option name="height" value="2135" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="NiDotNet" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="NiDotNet" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="NiDotNet" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="NiDotNet" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="NiDotNet" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="NIF" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Nif" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="77e16011-6820-426c-92d2-fbee59f81950" name="Default Changelist" comment="" />
+      <created>1562976388027</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562976388027</updated>
+      <workItem from="1562976389126" duration="164000" />
+      <workItem from="1562976562158" duration="1384000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1548000" />
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="25" width="1887" height="2135" extended-state="4" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25095057" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.32951146" />
+      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixed up files to with new namespaces and extra comments." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed up files to with new namespaces and extra comments." />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/NiDotNet/MonoBehaviour1.cs" />
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Importer/NifImporter.cs" />
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Importer.meta" />
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/NiHeader.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="834">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <marker date="1562976761144" expanded="false" signature="6:93" ph="..." />
+            <marker date="1562976761144" expanded="true" signature="117:3243" ph="{...}" />
+            <marker date="1562976761144" expanded="true" signature="145:3241" ph="{...}" />
+            <marker date="1562976761144" expanded="true" signature="641:3235" ph="{...}" />
+            <marker date="1562976761144" expanded="true" signature="776:827" ph="{...}" />
+            <marker date="1562976761144" expanded="true" signature="905:968" ph="/* Get NIF file version string ... */" />
+            <marker date="1562976761144" expanded="true" signature="1117:1173" ph="/* Get NIF file version ... */" />
+            <marker date="1562976761144" expanded="true" signature="1245:1296" ph="/* Get Endian type ... */" />
+            <marker date="1562976761144" expanded="true" signature="1363:1415" ph="/* Get user version ... */" />
+            <marker date="1562976761144" expanded="true" signature="1488:1539" ph="/* Get block count ... */" />
+            <marker date="1562976761144" expanded="true" signature="1614:1676" ph="/* Get number of object types ... */" />
+            <marker date="1562976761144" expanded="true" signature="1763:1816" ph="/* Read object types ... */" />
+            <marker date="1562976761144" expanded="true" signature="1873:2005" ph="{...}" />
+            <marker date="1562976761144" expanded="true" signature="2031:2082" ph="/* Get block types ... */" />
+            <marker date="1562976761144" expanded="true" signature="2138:2301" ph="{...}" />
+            <marker date="1562976761144" expanded="true" signature="2215:2286" ph="{...}" />
+            <marker date="1562976761144" expanded="true" signature="2315:2365" ph="/* Get block size ... */" />
+            <marker date="1562976761144" expanded="true" signature="2411:2489" ph="{...}" />
+            <marker date="1562976761144" expanded="true" signature="2515:2562" ph="/* Get strings ... */" />
+            <marker date="1562976761144" expanded="true" signature="2645:2702" ph="/* Get string max length ... */" />
+            <marker date="1562976761144" expanded="true" signature="2779:2827" ph="/* Read strings ... */" />
+            <marker date="1562976761144" expanded="true" signature="2880:2959" ph="{...}" />
+            <marker date="1562976761144" expanded="true" signature="2985:3031" ph="/* Get groups ... */" />
+            <marker date="1562976761144" expanded="true" signature="3148:3225" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/BinaryReaderExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <marker date="1562976761116" expanded="false" signature="6:35" ph="..." />
+            <marker date="1562976761116" expanded="true" signature="59:1450" ph="{...}" />
+            <marker date="1562976761116" expanded="true" signature="108:1448" ph="{...}" />
+            <marker date="1562976761116" expanded="true" signature="182:297" ph="{...}" />
+            <marker date="1562976761116" expanded="true" signature="370:838" ph="{...}" />
+            <marker date="1562976761116" expanded="true" signature="426:827" ph="{...}" />
+            <marker date="1562976761116" expanded="true" signature="904:1127" ph="{...}" />
+            <marker date="1562976761116" expanded="true" signature="956:1116" ph="{...}" />
+            <marker date="1562976761116" expanded="true" signature="1201:1442" ph="{...}" />
+            <marker date="1562976761116" expanded="true" signature="1253:1431" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Data/BlockInfo.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <marker date="1562976761112" expanded="true" signature="27:130" ph="{...}" />
+            <marker date="1562976761112" expanded="true" signature="56:128" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Enums/AlphaFormat.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding>
+            <marker date="1562976761148" expanded="true" signature="28:273" ph="{...}" />
+            <marker date="1562976761148" expanded="true" signature="65:271" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Enums/ConsistencyType.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding>
+            <marker date="1562976761076" expanded="true" signature="28:216" ph="{...}" />
+            <marker date="1562976761076" expanded="true" signature="71:214" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Enums/Endian.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding>
+            <marker date="1562976761000" expanded="true" signature="28:114" ph="{...}" />
+            <marker date="1562976761000" expanded="true" signature="60:112" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Enums/KeyType.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding>
+            <marker date="1562976761164" expanded="true" signature="28:537" ph="{...}" />
+            <marker date="1562976761164" expanded="true" signature="61:535" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Enums/MaterialColor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding>
+            <marker date="1562976761060" expanded="true" signature="28:161" ph="{...}" />
+            <marker date="1562976761060" expanded="true" signature="69:159" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Enums/MipMapFormat.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding>
+            <marker date="1562976761084" expanded="true" signature="28:234" ph="{...}" />
+            <marker date="1562976761084" expanded="true" signature="66:232" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Enums/NiSwitchFlags.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding>
+            <marker date="1562976761132" expanded="true" signature="28:152" ph="{...}" />
+            <marker date="1562976761132" expanded="true" signature="69:150" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Enums/NiVersion.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding>
+            <marker date="1562976761160" expanded="true" signature="28:3493" ph="{...}" />
+            <marker date="1562976761160" expanded="true" signature="63:3491" ph="{...}" />
+            <marker date="1562976761160" expanded="true" signature="78:139" ph="/// The ve R_2_3 ... " />
+            <marker date="1562976761160" expanded="true" signature="175:236" ph="/// The ve R_3_0 ... " />
+            <marker date="1562976761160" expanded="true" signature="272:334" ph="/// The ve R_3_03 ... " />
+            <marker date="1562976761160" expanded="true" signature="371:432" ph="/// The ve R_3_1 ... " />
+            <marker date="1562976761160" expanded="true" signature="468:534" ph="/// The ve R_3_3_0_13 ... " />
+            <marker date="1562976761160" expanded="true" signature="573:638" ph="/// The ve R_4_0_0_0 ... " />
+            <marker date="1562976761160" expanded="true" signature="676:741" ph="/// The ve R_4_0_0_2 ... " />
+            <marker date="1562976761160" expanded="true" signature="779:845" ph="/// The ve R_4_1_0_12 ... " />
+            <marker date="1562976761160" expanded="true" signature="884:950" ph="/// The ve R_4_1_0_12 ... " />
+            <marker date="1562976761160" expanded="true" signature="989:1054" ph="/// The ve R_4_2_0_2 ... " />
+            <marker date="1562976761160" expanded="true" signature="1092:1157" ph="/// The ve R_4_2_1_0 ... " />
+            <marker date="1562976761160" expanded="true" signature="1195:1260" ph="/// The ve R_4_2_2_0 ... " />
+            <marker date="1562976761160" expanded="true" signature="1298:1363" ph="/// The ve R_5_0_0_1 ... " />
+            <marker date="1562976761160" expanded="true" signature="1401:1467" ph="/// The ve R_10_0_1_0 ... " />
+            <marker date="1562976761160" expanded="true" signature="1507:1573" ph="/// The ve R_10_0_1_2 ... " />
+            <marker date="1562976761160" expanded="true" signature="1613:1679" ph="/// The ve R_10_0_1_3 ... " />
+            <marker date="1562976761160" expanded="true" signature="1706:1772" ph="/// The ve R_10_1_0_0 ... " />
+            <marker date="1562976761160" expanded="true" signature="1812:1880" ph="/// The ve R_10_1_0_101 ... " />
+            <marker date="1562976761160" expanded="true" signature="1922:1990" ph="/// The ve R_10_1_0_106 ... " />
+            <marker date="1562976761160" expanded="true" signature="2032:2098" ph="/// The ve R_10_2_0_0 ... " />
+            <marker date="1562976761160" expanded="true" signature="2138:2204" ph="/// The ve R_10_4_0_1 ... " />
+            <marker date="1562976761160" expanded="true" signature="2244:2310" ph="/// The ve R_20_0_0_4 ... " />
+            <marker date="1562976761160" expanded="true" signature="2350:2416" ph="/// The ve R_20_0_0_5 ... " />
+            <marker date="1562976761160" expanded="true" signature="2443:2509" ph="/// The ve R_20_1_0_3 ... " />
+            <marker date="1562976761160" expanded="true" signature="2549:2615" ph="/// The ve R_20_2_0_7 ... " />
+            <marker date="1562976761160" expanded="true" signature="2655:2721" ph="/// The ve R_20_2_0_8 ... " />
+            <marker date="1562976761160" expanded="true" signature="2748:2814" ph="/// The ve R_20_3_0_1 ... " />
+            <marker date="1562976761160" expanded="true" signature="2854:2920" ph="/// The ve R_20_3_0_2 ... " />
+            <marker date="1562976761160" expanded="true" signature="2947:3013" ph="/// The ve R_20_3_0_3 ... " />
+            <marker date="1562976761160" expanded="true" signature="3040:3106" ph="/// The ve R_20_3_0_6 ... " />
+            <marker date="1562976761160" expanded="true" signature="3146:3212" ph="/// The ve R_20_3_0_9 ... " />
+            <marker date="1562976761160" expanded="true" signature="3269:3339" ph="/// The ve r_ unsupported ... " />
+            <marker date="1562976761160" expanded="true" signature="3386:3452" ph="/// The ve r_ invalid ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Enums/PixelLayout.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding>
+            <marker date="1562976761080" expanded="true" signature="28:1091" ph="{...}" />
+            <marker date="1562976761080" expanded="true" signature="65:1089" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Enums/PlatformID.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding>
+            <marker date="1562976761128" expanded="true" signature="28:207" ph="{...}" />
+            <marker date="1562976761128" expanded="true" signature="64:205" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Enums/RendererID.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding>
+            <marker date="1562976761152" expanded="true" signature="28:233" ph="{...}" />
+            <marker date="1562976761152" expanded="true" signature="57:231" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Enums/TransformMethod.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding>
+            <marker date="1562976761044" expanded="true" signature="28:312" ph="{...}" />
+            <marker date="1562976761044" expanded="true" signature="62:310" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Enums/VectorFlags.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding>
+            <marker date="1562976761036" expanded="true" signature="28:571" ph="{...}" />
+            <marker date="1562976761036" expanded="true" signature="67:569" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiMatrix3X3.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding>
+            <marker date="1562976761044" expanded="true" signature="46:991" ph="{...}" />
+            <marker date="1562976761044" expanded="true" signature="88:989" ph="{...}" />
+            <marker date="1562976761044" expanded="true" signature="612:983" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiPosData.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding>
+            <marker date="1562976761028" expanded="true" signature="46:338" ph="{...}" />
+            <marker date="1562976761028" expanded="true" signature="86:336" ph="{...}" />
+            <marker date="1562976761028" expanded="true" signature="241:330" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiSkinInstance.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <folding>
+            <marker date="1562976761052" expanded="true" signature="46:1021" ph="{...}" />
+            <marker date="1562976761052" expanded="true" signature="91:1019" ph="{...}" />
+            <marker date="1562976761052" expanded="true" signature="501:1013" ph="{...}" />
+            <marker date="1562976761052" expanded="true" signature="901:1003" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiRef.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+          <folding>
+            <marker date="1562977602523" expanded="true" signature="28:539" ph="{...}" />
+            <marker date="1562977602523" expanded="true" signature="35:157" ph="/// Reference to a object lower in the file. ... " />
+            <marker date="1562977602523" expanded="true" signature="199:537" ph="{...}" />
+            <marker date="1562977602523" expanded="true" signature="394:463" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiPtr.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding>
+            <marker date="1562977573843" expanded="true" signature="28:518" ph="{...}" />
+            <marker date="1562977573843" expanded="true" signature="35:152" ph="/// Pointer to a object higher in file. ... " />
+            <marker date="1562977573843" expanded="true" signature="194:516" ph="{...}" />
+            <marker date="1562977573843" expanded="true" signature="373:442" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiObject.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding>
+            <marker date="1562977597247" expanded="true" signature="46:384" ph="{...}" />
+            <marker date="1562977597247" expanded="true" signature="53:124" ph="/// Base class for all Nif blocks. ... " />
+            <marker date="1562977597247" expanded="true" signature="150:382" ph="{...}" />
+            <marker date="1562977597247" expanded="true" signature="300:376" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+          <folding>
+            <marker date="1562977666407" expanded="true" signature="46:794" ph="{...}" />
+            <marker date="1562977666407" expanded="true" signature="85:792" ph="{...}" />
+            <marker date="1562977666407" expanded="true" signature="265:786" ph="{...}" />
+            <marker date="1562977666407" expanded="true" signature="288:336" ph="/* Get children ... */" />
+            <marker date="1562977666407" expanded="true" signature="443:521" ph="{...}" />
+            <marker date="1562977666407" expanded="true" signature="547:594" ph="/* Get effects ... */" />
+            <marker date="1562977666407" expanded="true" signature="699:776" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiAVObject.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <folding>
+            <marker date="1562977622703" expanded="false" signature="6:35" ph="..." />
+            <marker date="1562977622703" expanded="true" signature="65:1311" ph="{...}" />
+            <marker date="1562977622703" expanded="true" signature="109:1309" ph="{...}" />
+            <marker date="1562977622703" expanded="true" signature="521:1303" ph="{...}" />
+            <marker date="1562977622703" expanded="true" signature="585:633" ph="/* Get position ... */" />
+            <marker date="1562977622703" expanded="true" signature="704:752" ph="/* Get rotation ... */" />
+            <marker date="1562977622703" expanded="true" signature="825:870" ph="/* Get scale ... */" />
+            <marker date="1562977622703" expanded="true" signature="932:982" ph="/* Get properties ... */" />
+            <marker date="1562977622703" expanded="true" signature="1092:1172" ph="{...}" />
+            <marker date="1562977622703" expanded="true" signature="1186:1242" ph="/* Get collition object ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiObjectNet.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="39" column="1" lean-forward="true" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+          <folding>
+            <marker date="1562977680995" expanded="true" signature="46:936" ph="{...}" />
+            <marker date="1562977680995" expanded="true" signature="88:934" ph="{...}" />
+            <marker date="1562977680995" expanded="true" signature="333:928" ph="{...}" />
+            <marker date="1562977680995" expanded="true" signature="356:400" ph="/* Get name ... */" />
+            <marker date="1562977680995" expanded="true" signature="480:559" ph="{...}" />
+            <marker date="1562977680995" expanded="true" signature="573:621" ph="/* Get children ... */" />
+            <marker date="1562977680995" expanded="true" signature="730:809" ph="{...}" />
+            <marker date="1562977680995" expanded="true" signature="823:873" ph="/* Get Controller ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTBC.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding>
+            <marker date="1562976761016" expanded="true" signature="46:473" ph="{...}" />
+            <marker date="1562976761016" expanded="true" signature="82:471" ph="{...}" />
+            <marker date="1562976761016" expanded="true" signature="316:465" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTexture.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding>
+            <marker date="1562976761012" expanded="true" signature="46:203" ph="{...}" />
+            <marker date="1562976761012" expanded="true" signature="89:201" ph="{...}" />
+            <marker date="1562976761012" expanded="true" signature="175:195" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiLight.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <marker date="1562976761096" expanded="false" signature="6:35" ph="..." />
+            <marker date="1562976761096" expanded="true" signature="65:635" ph="{...}" />
+            <marker date="1562976761096" expanded="true" signature="110:633" ph="{...}" />
+            <marker date="1562976761096" expanded="true" signature="417:627" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiFloat.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <marker date="1562976761028" expanded="true" signature="46:361" ph="{...}" />
+            <marker date="1562976761028" expanded="true" signature="84:359" ph="{...}" />
+            <marker date="1562976761028" expanded="true" signature="222:283" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiInterpolator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding>
+            <marker date="1562976761088" expanded="true" signature="46:214" ph="{...}" />
+            <marker date="1562976761088" expanded="true" signature="91:212" ph="{...}" />
+            <marker date="1562976761088" expanded="true" signature="186:206" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTexCoord.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <marker date="1562976761020" expanded="false" signature="6:35" ph="..." />
+            <marker date="1562976761020" expanded="true" signature="65:480" ph="{...}" />
+            <marker date="1562976761020" expanded="true" signature="106:478" ph="{...}" />
+            <marker date="1562976761020" expanded="true" signature="289:383" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTexDesc.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="23" column="71" lean-forward="true" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
+          <folding>
+            <marker date="1562976761140" expanded="false" signature="6:42" ph="..." />
+            <marker date="1562976761140" expanded="true" signature="72:1257" ph="{...}" />
+            <marker date="1562976761140" expanded="true" signature="112:1255" ph="{...}" />
+            <marker date="1562976761140" expanded="true" signature="674:1249" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/NiFile.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="83" column="22" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="22" />
+          <folding>
+            <marker date="1562977379976" expanded="false" signature="6:178" ph="..." />
+            <marker date="1562977379976" expanded="true" signature="202:3821" ph="{...}" />
+            <marker date="1562977379976" expanded="true" signature="209:279" ph="/// A .NIF block structured file. ... " />
+            <marker date="1562977379976" expanded="true" signature="317:3819" ph="{...}" />
+            <marker date="1562977379976" expanded="true" signature="332:408" ph="/// The data for this nif file. ... " />
+            <marker date="1562977379976" expanded="true" signature="464:533" ph="/// The nif header file. ... " />
+            <marker date="1562977379976" expanded="true" signature="592:669" ph="/// All blocks in this nif file. ... " />
+            <marker date="1562977379976" expanded="true" signature="757:839" ph="/// All block types in this Assembly. ... " />
+            <marker date="1562977379976" expanded="true" signature="974:994" ph="{...}" />
+            <marker date="1562977379976" expanded="true" signature="1038:1677" ph="{...}" />
+            <marker date="1562977379976" expanded="true" signature="1061:1136" ph="/* Collect all NiObjects in this Assembly. ... */" />
+            <marker date="1562977379976" expanded="true" signature="1380:1428" ph="/* Read Header. ... */" />
+            <marker date="1562977379976" expanded="true" signature="1491:1565" ph="/* Read all the blocks in this .nif file. ... */" />
+            <marker date="1562977379976" expanded="true" signature="1715:3040" ph="{...}" />
+            <marker date="1562977379976" expanded="true" signature="1782:3030" ph="{...}" />
+            <marker date="1562977379976" expanded="true" signature="1886:2074" ph="/* Find type for this block. ... */" />
+            <marker date="1562977379976" expanded="true" signature="2189:2339" ph="{...}" />
+            <marker date="1562977379976" expanded="true" signature="2357:2526" ph="/* Read block info binary reader to be handled async. ... */" />
+            <marker date="1562977379976" expanded="true" signature="2654:2749" ph="/* Create instance of this NiObject and start reading. ... */" />
+            <marker date="1562977379976" expanded="true" signature="2860:2978" ph="/* Keep track of block as it may be referenced or pointed to by other blocks. ... */" />
+            <marker date="1562977379976" expanded="true" signature="3050:3245" ph="/// Get Objects from Int Array. ... " />
+            <marker date="1562977379976" expanded="true" signature="3309:3527" ph="{...}" />
+            <marker date="1562977379976" expanded="true" signature="3422:3492" ph="{...}" />
+            <marker date="1562977379976" expanded="true" signature="3545:3682" ph="/// Access the blocks directly though this NiFile. ... " />
+            <marker date="1562977379976" expanded="true" signature="3763:3813" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiPixelData.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding>
+            <marker date="1562976761092" expanded="false" signature="6:49" ph="..." />
+            <marker date="1562976761092" expanded="true" signature="79:953" ph="{...}" />
+            <marker date="1562976761092" expanded="true" signature="126:951" ph="{...}" />
+            <marker date="1562976761092" expanded="true" signature="382:945" ph="{...}" />
+            <marker date="1562976761092" expanded="true" signature="761:935" ph="{...}" />
+            <marker date="1562976761092" expanded="true" signature="828:921" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/NiTriShapeData.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <folding>
+            <marker date="1562976761072" expanded="true" signature="46:1414" ph="{...}" />
+            <marker date="1562976761072" expanded="true" signature="53:80" ph="/* TODO: Fix ... */" />
+            <marker date="1562976761072" expanded="true" signature="133:1412" ph="{...}" />
+            <marker date="1562976761072" expanded="true" signature="538:1406" ph="{...}" />
+            <marker date="1562976761072" expanded="true" signature="724:974" ph="{...}" />
+            <marker date="1562976761072" expanded="true" signature="857:960" ph="{...}" />
+            <marker date="1562976761072" expanded="true" signature="1155:1396" ph="{...}" />
+            <marker date="1562976761072" expanded="true" signature="1189:1296" ph="{...}" />
+            <marker date="1562976761072" expanded="true" signature="1318:1382" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NiDotNet/NIF/Nodes/SkinPartition.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-259">
+          <caret line="58" column="48" lean-forward="true" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
+          <folding>
+            <marker date="1562976761028" expanded="true" signature="46:3795" ph="{...}" />
+            <marker date="1562976761028" expanded="true" signature="53:120" ph="/* This Object runs out of data sometimes. TODO: Fix ... */" />
+            <marker date="1562976761028" expanded="true" signature="162:3793" ph="{...}" />
+            <marker date="1562976761028" expanded="true" signature="1309:3787" ph="{...}" />
+            <marker date="1562976761028" expanded="true" signature="1673:1749" ph="{...}" />
+            <marker date="1562976761028" expanded="true" signature="1843:2075" ph="{...}" />
+            <marker date="1562976761028" expanded="true" signature="1969:2061" ph="{...}" />
+            <marker date="1562976761028" expanded="true" signature="2165:2536" ph="{...}" />
+            <marker date="1562976761028" expanded="true" signature="2312:2522" ph="{...}" />
+            <marker date="1562976761028" expanded="true" signature="2393:2504" ph="{...}" />
+            <marker date="1562976761028" expanded="true" signature="2640:2724" ph="{...}" />
+            <marker date="1562976761028" expanded="true" signature="2830:3446" ph="{...}" />
+            <marker date="1562976761028" expanded="true" signature="2987:3194" ph="{...}" />
+            <marker date="1562976761028" expanded="true" signature="3072:3176" ph="{...}" />
+            <marker date="1562976761028" expanded="true" signature="3329:3432" ph="{...}" />
+            <marker date="1562976761028" expanded="true" signature="3682:3777" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
