@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')"/>
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{6FE857EA-99B2-45A9-8F8A-E131D91645C5}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>NiDotNet</RootNamespace>
+        <AssemblyName>NiDotNet</AssemblyName>
+        <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="System"/>
+        <Reference Include="System.Core"/>
+        <Reference Include="System.Xml"/>
+        <Reference Include="UnityEngine">
+            <HintPath>/media/wincent/MainDisk/Unity/Unity Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="NIF\BinaryReaderExtensions.cs"/>
+        <Compile Include="NIF\Data\BlockInfo.cs"/>
+        <Compile Include="NIF\Enums\AlphaFormat.cs"/>
+        <Compile Include="NIF\Enums\ConsistencyType.cs"/>
+        <Compile Include="NIF\Enums\Endian.cs"/>
+        <Compile Include="NIF\Enums\KeyType.cs"/>
+        <Compile Include="NIF\Enums\MaterialColor.cs"/>
+        <Compile Include="NIF\Enums\MipMapFormat.cs"/>
+        <Compile Include="NIF\Enums\NiSwitchFlags.cs"/>
+        <Compile Include="NIF\Enums\NiVersion.cs"/>
+        <Compile Include="NIF\Enums\PixelLayout.cs"/>
+        <Compile Include="NIF\Enums\PlatformID.cs"/>
+        <Compile Include="NIF\Enums\RendererID.cs"/>
+        <Compile Include="NIF\Enums\TransformMethod.cs"/>
+        <Compile Include="NIF\Enums\VectorFlags.cs"/>
+        <Compile Include="NIF\NiFile.cs"/>
+        <Compile Include="NIF\NiHeader.cs"/>
+        <Compile Include="NIF\Nodes\AbstractAdditionalGeometryData.cs"/>
+        <Compile Include="NIF\Nodes\NiAlphaProperty.cs"/>
+        <Compile Include="NIF\Nodes\NiAmbientLight.cs"/>
+        <Compile Include="NIF\Nodes\NiAVObject.cs"/>
+        <Compile Include="NIF\Nodes\NiBoneData.cs"/>
+        <Compile Include="NIF\Nodes\NiBoneVertData.cs"/>
+        <Compile Include="NIF\Nodes\NiBoolean.cs"/>
+        <Compile Include="NIF\Nodes\NiBound.cs"/>
+        <Compile Include="NIF\Nodes\NiByteColor4.cs"/>
+        <Compile Include="NIF\Nodes\NiCamera.cs"/>
+        <Compile Include="NIF\Nodes\NiDynamicEffect.cs"/>
+        <Compile Include="NIF\Nodes\NiExtraData.cs"/>
+        <Compile Include="NIF\Nodes\NiFloat.cs"/>
+        <Compile Include="NIF\Nodes\NiFormatPrefs.cs"/>
+        <Compile Include="NIF\Nodes\NiGeometry.cs"/>
+        <Compile Include="NIF\Nodes\NiGeometryData.cs"/>
+        <Compile Include="NIF\Nodes\NiImage.cs"/>
+        <Compile Include="NIF\Nodes\NiInterpController.cs"/>
+        <Compile Include="NIF\Nodes\NiInterpolator.cs"/>
+        <Compile Include="NIF\Nodes\NiKey.cs"/>
+        <Compile Include="NIF\Nodes\NiKeyBasedInterpolator.cs"/>
+        <Compile Include="NIF\Nodes\NiKeyframeController.cs"/>
+        <Compile Include="NIF\Nodes\NiKeyframeData.cs"/>
+        <Compile Include="NIF\Nodes\NiKeyGroup.cs"/>
+        <Compile Include="NIF\Nodes\NiLight.cs"/>
+        <Compile Include="NIF\Nodes\NiLODData.cs"/>
+        <Compile Include="NIF\Nodes\NiLODNode.cs"/>
+        <Compile Include="NIF\Nodes\NiLODRange.cs"/>
+        <Compile Include="NIF\Nodes\NiMatchGroup.cs"/>
+        <Compile Include="NIF\Nodes\NiMaterialColorController.cs"/>
+        <Compile Include="NIF\Nodes\NiMaterialData.cs"/>
+        <Compile Include="NIF\Nodes\NiMaterialProperty.cs"/>
+        <Compile Include="NIF\Nodes\NiMatrix2x2.cs"/>
+        <Compile Include="NIF\Nodes\NiMatrix3X3.cs"/>
+        <Compile Include="NIF\Nodes\NiMipMap.cs"/>
+        <Compile Include="NIF\Nodes\NiNode.cs"/>
+        <Compile Include="NIF\Nodes\NiObject.cs"/>
+        <Compile Include="NIF\Nodes\NiObjectNet.cs"/>
+        <Compile Include="NIF\Nodes\NiPalette.cs"/>
+        <Compile Include="NIF\Nodes\NiPersistentSrcTextureRendererData.cs"/>
+        <Compile Include="NIF\Nodes\NiPixelData.cs"/>
+        <Compile Include="NIF\Nodes\NiPixelFormat.cs"/>
+        <Compile Include="NIF\Nodes\NiPoint3InterpController.cs"/>
+        <Compile Include="NIF\Nodes\NiPoint3Interpolator.cs"/>
+        <Compile Include="NIF\Nodes\NiPosData.cs"/>
+        <Compile Include="NIF\Nodes\NiProperty.cs"/>
+        <Compile Include="NIF\Nodes\NiPtr.cs"/>
+        <Compile Include="NIF\Nodes\NiQuaternion.cs"/>
+        <Compile Include="NIF\Nodes\NiQuatTransform.cs"/>
+        <Compile Include="NIF\Nodes\NiRangeLODData.cs"/>
+        <Compile Include="NIF\Nodes\NiRawImageData.cs"/>
+        <Compile Include="NIF\Nodes\NiRef.cs"/>
+        <Compile Include="NIF\Nodes\NiShadeProperty.cs"/>
+        <Compile Include="NIF\Nodes\NiShaderTexDesc.cs"/>
+        <Compile Include="NIF\Nodes\NiSingleInterpController.cs"/>
+        <Compile Include="NIF\Nodes\NiSkinData.cs"/>
+        <Compile Include="NIF\Nodes\NiSkinInstance.cs"/>
+        <Compile Include="NIF\Nodes\NiSkinPartition.cs"/>
+        <Compile Include="NIF\Nodes\NiSourceTexture.cs"/>
+        <Compile Include="NIF\Nodes\NiSpecularProperty.cs"/>
+        <Compile Include="NIF\Nodes\NiString.cs"/>
+        <Compile Include="NIF\Nodes\NiStringExtraData.cs"/>
+        <Compile Include="NIF\Nodes\NiSwitchNode.cs"/>
+        <Compile Include="NIF\Nodes\NiTBC.cs"/>
+        <Compile Include="NIF\Nodes\NiTexCoord.cs"/>
+        <Compile Include="NIF\Nodes\NiTexDesc.cs"/>
+        <Compile Include="NIF\Nodes\NiTexture.cs"/>
+        <Compile Include="NIF\Nodes\NiTextureProperty.cs"/>
+        <Compile Include="NIF\Nodes\NiTexturingProperty.cs"/>
+        <Compile Include="NIF\Nodes\NiTimeController.cs"/>
+        <Compile Include="NIF\Nodes\NiTransform.cs"/>
+        <Compile Include="NIF\Nodes\NiTransformController.cs"/>
+        <Compile Include="NIF\Nodes\NiTransformData.cs"/>
+        <Compile Include="NIF\Nodes\NiTransformInterpolator.cs"/>
+        <Compile Include="NIF\Nodes\NiTriangle.cs"/>
+        <Compile Include="NIF\Nodes\NiTriBasedGeom.cs"/>
+        <Compile Include="NIF\Nodes\NiTriBasedGeomData.cs"/>
+        <Compile Include="NIF\Nodes\NiTriShape.cs"/>
+        <Compile Include="NIF\Nodes\NiTriShapeData.cs"/>
+        <Compile Include="NIF\Nodes\NiTriStrips.cs"/>
+        <Compile Include="NIF\Nodes\NiTriStripsData.cs"/>
+        <Compile Include="NIF\Nodes\NiVector3.cs"/>
+        <Compile Include="NIF\Nodes\NiVertexColorProperty.cs"/>
+        <Compile Include="NIF\Nodes\NiZBufferProperty.cs"/>
+        <Compile Include="NIF\Nodes\QuatKey.cs"/>
+        <Compile Include="NIF\Nodes\SkinPartition.cs"/>
+        <Compile Include="Properties\AssemblyInfo.cs"/>
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+           Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+      -->
+</Project>
