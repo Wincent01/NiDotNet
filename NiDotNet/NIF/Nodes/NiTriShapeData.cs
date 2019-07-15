@@ -2,9 +2,6 @@ using System.IO;
 
 namespace NiDotNet.NIF.Nodes
 {
-    /*
-     * TODO: Fix
-     */
     public class NiTriShapeData : NiTriBasedGeomData
     {
         public uint TrianglePointCount { get; set; }
@@ -26,7 +23,7 @@ namespace NiDotNet.NIF.Nodes
             if (HasTriangles)
             {
                 Triangles = new NiTriangle[TriangleCount];
-                for (var i = 0; i < TriangleCount / 3; i++)
+                for (var i = 0; i < TriangleCount; i++)
                 {
                     Triangles[i] = new NiTriangle(reader, niFile);
                 }
