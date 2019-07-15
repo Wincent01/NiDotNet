@@ -1,5 +1,4 @@
 using System.IO;
-using UnityEngine;
 
 namespace NiDotNet.NIF.Nodes
 {
@@ -24,12 +23,12 @@ namespace NiDotNet.NIF.Nodes
             A = reader.ReadByte();
         }
 
-        public static implicit operator Color(NiByteColor4 c) => new Color
+        public static implicit operator NiColor4(NiByteColor4 c) => new NiColor4
         {
-            r = c.R / 255f,
-            g = c.G / 255f,
-            b = c.B / 255f,
-            a = c.A / 255f,
+            R = c.R / 255f,
+            G = c.G / 255f,
+            B = c.B / 255f,
+            A = c.A / 255f,
         };
     }
 }

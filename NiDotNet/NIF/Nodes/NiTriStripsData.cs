@@ -1,5 +1,4 @@
 using System.IO;
-using UnityEngine;
 
 namespace NiDotNet.NIF.Nodes
 {
@@ -18,7 +17,6 @@ namespace NiDotNet.NIF.Nodes
             StripsCount = reader.ReadUInt16();
 
             StripsLengths = reader.ReadUInt16();
-            Debug.Log($"Strips Count: {StripsCount} | Strips Lengths: {StripsLengths}");
 
             HasPoints = new NiBoolean(reader);
 

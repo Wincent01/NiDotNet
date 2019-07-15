@@ -1,6 +1,5 @@
 using System;
 using System.IO;
-using UnityEngine;
 
 namespace NiDotNet.NIF.Nodes
 {
@@ -19,8 +18,6 @@ namespace NiDotNet.NIF.Nodes
             PixelCount = reader.ReadUInt32();
 
             FacesCount = reader.ReadUInt32();
-
-            Debug.Log($"{PixelCount} | {FacesCount}");
 
             PixelData = new byte[FacesCount, PixelCount];
 

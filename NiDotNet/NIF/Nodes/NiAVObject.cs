@@ -1,5 +1,4 @@
 using System.IO;
-using UnityEngine;
 
 namespace NiDotNet.NIF.Nodes
 {
@@ -7,9 +6,9 @@ namespace NiDotNet.NIF.Nodes
     {
         public short Flags { get; set; }
 
-        public Vector3 Position { get; set; }
+        public NiVector3 Position { get; set; }
 
-        public Matrix4x4 Rotation { get; set; }
+        public NiMatrix3X3 Rotation { get; set; }
 
         public float UniformScale { get; set; }
 
@@ -24,12 +23,12 @@ namespace NiDotNet.NIF.Nodes
             //
             //    Get position
             //
-            Position = reader.ReadVector3();
+            Position = new NiVector3(reader, file);
 
             //
             //    Get rotation
             //
-            Rotation = reader.ReadMatrix4X4();
+            Rotation = new NiMatrix3X3(reader, file);
 
             //
             //    Get scale

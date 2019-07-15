@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using NiDotNet.NIF.Data;
 using NiDotNet.NIF.Nodes;
-using UnityEngine;
 
 namespace NiDotNet.NIF
 {

@@ -1,5 +1,10 @@
 using System.IO;
+#if UNITY_5_4_OR_NEWER
 using UnityEngine;
+#else
+using System.Numerics;
+
+#endif
 
 namespace NiDotNet.NIF.Nodes
 {

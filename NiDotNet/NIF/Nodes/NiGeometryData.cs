@@ -1,6 +1,5 @@
 using System.IO;
 using NiDotNet.NIF.Enums;
-using UnityEngine;
 
 namespace NiDotNet.NIF.Nodes
 {
@@ -16,15 +15,15 @@ namespace NiDotNet.NIF.Nodes
 
         public NiBoolean HasVertices { get; set; }
 
-        public Vector3[] Vertices { get; set; }
+        public NiVector3[] Vertices { get; set; }
 
         public VectorFlags VectorSettings { get; set; }
 
         public NiBoolean HasNormals { get; set; }
 
-        public Vector3[] Normals { get; set; }
+        public NiVector3[] Normals { get; set; }
 
-        public Vector3 Center { get; set; }
+        public NiVector3 Center { get; set; }
 
         public float Radius { get; set; }
 
@@ -32,7 +31,7 @@ namespace NiDotNet.NIF.Nodes
 
         public NiBoolean HasVertexColors { get; set; }
 
-        public Color[] VertexColors { get; set; }
+        public NiColor4[] VertexColors { get; set; }
 
         public ConsistencyType Consistency { get; set; }
 
@@ -44,9 +43,9 @@ namespace NiDotNet.NIF.Nodes
 
         public NiTexCoord[][] Uv { get; set; }
 
-        public Vector3[] Tangents { get; set; }
+        public NiVector3[] Tangents { get; set; }
 
-        public Vector3[] BitTangents { get; set; }
+        public NiVector3[] BitTangents { get; set; }
 
         public NiGeometryData(BinaryReader reader, NiFile niFile) : base(reader, niFile)
         {
@@ -66,7 +65,7 @@ namespace NiDotNet.NIF.Nodes
             HasVertices = new NiBoolean(reader);
             if (HasVertices)
             {
-                Vertices = new Vector3[VerticesCount];
+                Vertices = new NiVector3[VerticesCount];
                 for (uint i = 0; i < VerticesCount; i++)
                 {
                     Vertices[i] = new NiVector3(reader, niFile);
@@ -82,7 +81,7 @@ namespace NiDotNet.NIF.Nodes
             HasNormals = new NiBoolean(reader);
             if (HasNormals)
             {
-                Normals = new Vector3[VerticesCount];
+                Normals = new NiVector3[VerticesCount];
                 for (uint i = 0; i < VerticesCount; i++)
                 {
                     Normals[i] = new NiVector3(reader, niFile);
@@ -93,13 +92,13 @@ namespace NiDotNet.NIF.Nodes
             {
                 if (HasNormals && (NumUvSets & 61440) != 0)
                 {
-                    Tangents = new Vector3[VerticesCount];
+                    Tangents = new NiVector3[VerticesCount];
                     for (uint i = 0; i < VerticesCount; i++)
                     {
                         Tangents[i] = new NiVector3(reader, niFile);
                     }
 
-                    BitTangents = new Vector3[VerticesCount];
+                    BitTangents = new NiVector3[VerticesCount];
                     for (uint i = 0; i < VerticesCount; i++)
                     {
                         BitTangents[i] = new NiVector3(reader, niFile);
@@ -113,10 +112,10 @@ namespace NiDotNet.NIF.Nodes
             HasVertexColors = new NiBoolean(reader);
             if (HasVertexColors)
             {
-                VertexColors = new Color[VerticesCount];
+                VertexColors = new NiColor4[VerticesCount];
                 for (uint i = 0; i < VerticesCount; i++)
                 {
-                    VertexColors[i] = reader.ReadColor4();
+                    VertexColors[i] = new NiColor4(reader, niFile);
                 }
             }
 

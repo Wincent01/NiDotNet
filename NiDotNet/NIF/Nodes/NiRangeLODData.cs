@@ -1,11 +1,10 @@
 using System.IO;
-using UnityEngine;
 
 namespace NiDotNet.NIF.Nodes
 {
     public class NiRangeLODData : NiLODData
     {
-        public Vector3 Center { get; set; }
+        public NiVector3 Center { get; set; }
 
         public uint LevelCount { get; set; }
 
@@ -13,7 +12,7 @@ namespace NiDotNet.NIF.Nodes
 
         public NiRangeLODData(BinaryReader reader, NiFile niFile) : base(reader, niFile)
         {
-            Center = reader.ReadVector3();
+            Center = new NiVector3(reader, niFile);
 
             LevelCount = reader.ReadUInt32();
 

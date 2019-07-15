@@ -1,18 +1,17 @@
 using System.IO;
 using NiDotNet.NIF.Enums;
-using UnityEngine;
 
 namespace NiDotNet.NIF.Nodes
 {
     public class NiMaterialProperty : NiProperty
     {
-        public Color AmbientColor { get; set; }
+        public NiColor3 AmbientColor { get; set; }
 
-        public Color DiffuseColor { get; set; }
+        public NiColor3 DiffuseColor { get; set; }
 
-        public Color SpecularColor { get; set; }
+        public NiColor3 SpecularColor { get; set; }
 
-        public Color EmissiveColor { get; set; }
+        public NiColor3 EmissiveColor { get; set; }
 
         public float Glossiness { get; set; }
 
@@ -25,13 +24,13 @@ namespace NiDotNet.NIF.Nodes
             //
             //    Read colors
             //
-            AmbientColor = reader.ReadColor3();
+            AmbientColor = new NiColor3(reader, file);
 
-            DiffuseColor = reader.ReadColor3();
+            DiffuseColor = new NiColor3(reader, file);
 
-            SpecularColor = reader.ReadColor3();
+            SpecularColor = new NiColor3(reader, file);
 
-            EmissiveColor = reader.ReadColor3();
+            EmissiveColor = new NiColor3(reader, file);
 
             //
             //    Get other properties

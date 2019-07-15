@@ -1,17 +1,16 @@
 using System.IO;
-using UnityEngine;
 
 namespace NiDotNet.NIF.Nodes
 {
     public class NiBound : NiObject
     {
-        public Vector3 Center { get; set; }
+        public NiVector3 Center { get; set; }
 
         public float Radius { get; set; }
 
         public NiBound(BinaryReader reader, NiFile niFile) : base(reader, niFile)
         {
-            Center = reader.ReadVector3();
+            Center = new NiVector3(reader, niFile);
 
             Radius = reader.ReadSingle();
         }

@@ -1,5 +1,4 @@
 using System.IO;
-using UnityEngine;
 
 namespace NiDotNet.NIF.Nodes
 {
@@ -7,7 +6,7 @@ namespace NiDotNet.NIF.Nodes
     {
         public NiTransform Transform { get; set; }
 
-        public Vector3 BoundingSphereOffset { get; set; }
+        public NiVector3 BoundingSphereOffset { get; set; }
 
         public float BoundingSphereRadius { get; set; }
 
@@ -19,7 +18,7 @@ namespace NiDotNet.NIF.Nodes
         {
             Transform = new NiTransform(reader, niFile);
 
-            BoundingSphereOffset = reader.ReadVector3();
+            BoundingSphereOffset = new NiVector3(reader, niFile);
 
             BoundingSphereRadius = reader.ReadSingle();
 

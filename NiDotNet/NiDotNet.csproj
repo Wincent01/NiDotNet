@@ -34,6 +34,7 @@
     <ItemGroup>
         <Reference Include="System"/>
         <Reference Include="System.Core"/>
+        <Reference Include="System.Numerics"/>
         <Reference Include="System.Xml"/>
         <Reference Include="UnityEngine">
             <HintPath>/media/wincent/MainDisk/Unity/Unity Editor/2019.2.0b7/Editor/Data/Managed/UnityEngine.dll</HintPath>
@@ -67,6 +68,8 @@
         <Compile Include="NIF\Nodes\NiBound.cs"/>
         <Compile Include="NIF\Nodes\NiByteColor4.cs"/>
         <Compile Include="NIF\Nodes\NiCamera.cs"/>
+        <Compile Include="NIF\Nodes\NiColor3.cs"/>
+        <Compile Include="NIF\Nodes\NiColor4.cs"/>
         <Compile Include="NIF\Nodes\NiDynamicEffect.cs"/>
         <Compile Include="NIF\Nodes\NiExtraData.cs"/>
         <Compile Include="NIF\Nodes\NiFloat.cs"/>
@@ -147,10 +150,10 @@
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-           Other similar extension points exist, see Microsoft.Common.targets.
-      <Target Name="BeforeBuild">
-      </Target>
-      <Target Name="AfterBuild">
-      </Target>
-      -->
+             Other similar extension points exist, see Microsoft.Common.targets.
+        <Target Name="BeforeBuild">
+        </Target>
+        <Target Name="AfterBuild">
+        </Target>
+        -->
 </Project>
