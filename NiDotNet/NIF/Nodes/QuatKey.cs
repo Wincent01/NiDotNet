@@ -16,7 +16,7 @@ namespace NiDotNet.NIF.Nodes
         {
             if (type != (KeyType) 4)
             {
-                Time = reader.ReadInt32();
+                Time = reader.ReadSingle();
                 Value = (T) Activator.CreateInstance(typeof(T), reader, niFile);
             }
 

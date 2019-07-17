@@ -2,9 +2,6 @@ using System.IO;
 
 namespace NiDotNet.NIF.Nodes
 {
-    /*
-     * This Object runs out of data sometimes. TODO: Fix
-     */
     public class SkinPartition : NiObject
     {
         public ushort VerticesCount { get; set; }
@@ -37,11 +34,7 @@ namespace NiDotNet.NIF.Nodes
 
         public NiBoolean HasBoneIndices { get; set; }
 
-        public byte BoneIndices { get; set; }
-
-        public ushort Unknown { get; set; }
-
-        public NiTriangle[] TrianglesCopy { get; set; }
+        public byte[,] BoneIndices { get; set; }
 
         public SkinPartition(BinaryReader reader, NiFile niFile) : base(reader, niFile)
         {
@@ -107,7 +100,10 @@ namespace NiDotNet.NIF.Nodes
                         Strips[i, j] = reader.ReadUInt16();
                     }
                 }
+            }
 
+            if (HasFaces && StripsCount == 0)
+            {
                 Triangles = new NiTriangle[TrianglesCount];
 
                 for (var i = 0; i < TrianglesCount; i++)
@@ -118,13 +114,17 @@ namespace NiDotNet.NIF.Nodes
 
             HasBoneIndices = new NiBoolean(reader);
 
-            Unknown = reader.ReadUInt16();
-
-            TrianglesCopy = new NiTriangle[TrianglesCount];
-
-            for (var i = 0; i < TrianglesCount; i++)
+            if (!HasBoneIndices) return;
             {
-                TrianglesCopy[i] = new NiTriangle(reader, niFile);
+                BoneIndices = new byte[VerticesCount, WeightsPerVertex];
+
+                for (var i = 0; i < VerticesCount; i++)
+                {
+                    for (var j = 0; j < WeightsPerVertex; j++)
+                    {
+                        BoneIndices[i, j] = reader.ReadByte();
+                    }
+                }
             }
         }
     }

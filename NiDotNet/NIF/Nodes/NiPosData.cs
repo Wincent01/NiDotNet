@@ -8,7 +8,7 @@ namespace NiDotNet.NIF.Nodes
 
         public NiPosData(BinaryReader reader, NiFile niFile) : base(reader, niFile)
         {
-            Data = new NiKeyGroup<NiVector3>(reader, niFile, false);
+            Data = new NiKeyGroup<NiVector3>(reader, niFile);
         }
     }
 }

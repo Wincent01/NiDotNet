@@ -28,7 +28,8 @@ namespace NiDotNet.NIF.Nodes
                 Backwards = (T) Activator.CreateInstance(typeof(T), reader, niFile);
             }
 
-            TBC = new NiTBC(reader, niFile);
+            if (type == (KeyType) 3)
+                TBC = new NiTBC(reader, niFile);
         }
     }
 }

@@ -2,6 +2,9 @@ using System.IO;
 
 namespace NiDotNet.NIF.Nodes
 {
+    /*
+     * TODO: Fix
+     */
     public class NiTriShapeData : NiTriBasedGeomData
     {
         public uint TrianglePointCount { get; set; }

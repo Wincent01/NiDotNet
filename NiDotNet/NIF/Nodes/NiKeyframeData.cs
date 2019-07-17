@@ -7,7 +7,7 @@ namespace NiDotNet.NIF.Nodes
     {
         public uint RotationKeyCount { get; set; }
 
-        public KeyType Type { get; set; }
+        public KeyType RotationType { get; set; }
 
         public QuatKey<NiQuaternion>[] QuaternionKeys { get; set; }
 
@@ -22,24 +22,28 @@ namespace NiDotNet.NIF.Nodes
             RotationKeyCount = reader.ReadUInt32();
 
             if (RotationKeyCount != 0)
-                Type = (KeyType) reader.ReadUInt32();
+                RotationType = (KeyType) reader.ReadUInt32();
 
-            if (Type != (KeyType) 4)
+            if (RotationType != (KeyType) 4)
             {
                 QuaternionKeys = new QuatKey<NiQuaternion>[RotationKeyCount];
+                for (var i = 0; i < RotationKeyCount; i++)
+                {
+                    QuaternionKeys[i] = new QuatKey<NiQuaternion>(reader, niFile, RotationType);
+                }
             }
             else
             {
                 Rotations = new NiKeyGroup<NiFloat>[3];
                 for (var i = 0; i < 3; i++)
                 {
-                    Rotations[i] = new NiKeyGroup<NiFloat>(reader, niFile, false);
+                    Rotations[i] = new NiKeyGroup<NiFloat>(reader, niFile);
                 }
             }
 
-            Translations = new NiKeyGroup<NiVector3>(reader, niFile, false);
+            Translations = new NiKeyGroup<NiVector3>(reader, niFile);
 
-            Scales = new NiKeyGroup<NiFloat>(reader, niFile, false);
+            Scales = new NiKeyGroup<NiFloat>(reader, niFile);
         }
     }
 }

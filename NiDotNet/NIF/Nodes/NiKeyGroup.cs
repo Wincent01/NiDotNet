@@ -1,5 +1,6 @@
 using System.IO;
 using NiDotNet.NIF.Enums;
+using UnityEngine;
 
 namespace NiDotNet.NIF.Nodes
 {
@@ -11,13 +12,13 @@ namespace NiDotNet.NIF.Nodes
 
         public NiKey<T>[] Keys { get; set; }
 
-        public NiKeyGroup(BinaryReader reader, NiFile niFile, bool interpolation) : base(reader, niFile)
+        public NiKeyGroup(BinaryReader reader, NiFile niFile) : base(reader, niFile)
         {
             KeyCount = reader.ReadUInt32();
 
-            Type = (KeyType) reader.ReadUInt32();
+            if (KeyCount != 0)
+                Type = (KeyType) reader.ReadUInt32();
 
-            if (!interpolation) return;
             Keys = new NiKey<T>[KeyCount];
             for (var i = 0; i < KeyCount; i++)
             {
